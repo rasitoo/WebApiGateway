@@ -11,6 +11,607 @@
           "Port": 80
         }
       ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/User/GetUsers",
+      "DownstreamPathTemplate": "/User/GetUsers",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "auth_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/User/ConfirmEmail/{token}",
+      "DownstreamPathTemplate": "/User/ConfirmEmail/{token}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "auth_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/User/RequestChangePassword/{email}",
+      "DownstreamPathTemplate": "/User/RequestChangePassword/{email}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "auth_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamPathTemplate": "/User/RegisterUsers",
+      "DownstreamPathTemplate": "/User/RegisterUsers",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "auth_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamPathTemplate": "/User/LogUser",
+      "DownstreamPathTemplate": "/User/LogUser",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "auth_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Patch" ],
+      "UpstreamPathTemplate": "/User/ChangePassword",
+      "DownstreamPathTemplate": "/User/ChangePassword",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "auth_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamPathTemplate": "/api/Community",
+      "DownstreamPathTemplate": "/api/Community",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamPathTemplate": "/api/Community/SubscribeToCommunity/{comid}",
+      "DownstreamPathTemplate": "/api/Community/SubscribeToCommunity/{comid}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
+      "UpstreamPathTemplate": "/api/Community/{id}",
+      "DownstreamPathTemplate": "/api/Community/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/Community/All",
+      "DownstreamPathTemplate": "/api/Community/All",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/Community/bycreator/{creatorId}",
+      "DownstreamPathTemplate": "/api/Community/bycreator/{creatorId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/Community/bysubscrition",
+      "DownstreamPathTemplate": "/api/Community/bysubscrition",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Delete" ],
+      "UpstreamPathTemplate": "/api/Community/UnsubscribeToCommunity/{comid}",
+      "DownstreamPathTemplate": "/api/Community/UnsubscribeToCommunity/{comid}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamPathTemplate": "/api/Responses/CrearRespuesta",
+      "DownstreamPathTemplate": "/api/Responses/CrearRespuesta",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamPathTemplate": "/api/Responses/LikeResponse/{responseId}",
+      "DownstreamPathTemplate": "/api/Responses/LikeResponse/{responseId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/Responses/{threadId}/Responses",
+      "DownstreamPathTemplate": "/api/Responses/{threadId}/Responses",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/Responses/{responseId}/Replies",
+      "DownstreamPathTemplate": "/api/Responses/{responseId}/Replies",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Responses/{idResponse}",
+      "DownstreamPathTemplate": "/api/Responses/{idResponse}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Responses/bycreator/{creatorId}",
+      "DownstreamPathTemplate": "/api/Responses/bycreator/{creatorId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Responses/byLike/{creatorId}",
+      "DownstreamPathTemplate": "/api/Responses/byLike/{creatorId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "PUT" ],
+      "UpstreamPathTemplate": "/api/Responses/UpdateaRespuesta",
+      "DownstreamPathTemplate": "/api/Responses/UpdateaRespuesta",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamPathTemplate": "/api/Responses/UnlikeResponse/{responseId}",
+      "DownstreamPathTemplate": "/api/Responses/UnlikeResponse/{responseId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Roles/RolesComunidad/{idCommunity}",
+      "DownstreamPathTemplate": "/api/Roles/RolesComunidad/{idCommunity}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamPathTemplate": "/api/Roles/assignRole",
+      "DownstreamPathTemplate": "/api/Roles/assignRole",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamPathTemplate": "/api/Roles/removeRole",
+      "DownstreamPathTemplate": "/api/Roles/removeRole",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamPathTemplate": "/api/Thread",
+      "DownstreamPathTemplate": "/api/Thread",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamPathTemplate": "/api/Thread/LikeThread/{threadId}",
+      "DownstreamPathTemplate": "/api/Thread/LikeThread/{threadId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Thread/All",
+      "DownstreamPathTemplate": "/api/Thread/All",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Thread/AllByComunity/{idCom}",
+      "DownstreamPathTemplate": "/api/Thread/AllByComunity/{idCom}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamPathTemplate": "/api/Thread/UnlikeThread/{threadId}",
+      "DownstreamPathTemplate": "/api/Thread/UnlikeThread/{threadId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "com_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Follows/followers/{userId}",
+      "DownstreamPathTemplate": "/api/Follows/followers/{userId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prof_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Follows/following/{userId}",
+      "DownstreamPathTemplate": "/api/Follows/following/{userId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prof_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamPathTemplate": "/api/Follows/StartFollowing",
+      "DownstreamPathTemplate": "/api/Follows/StartFollowing",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prof_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamPathTemplate": "/api/Follows/StopFollowing",
+      "DownstreamPathTemplate": "/api/Follows/StopFollowing",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prof_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamPathTemplate": "/api/Follows/DropFollower",
+      "DownstreamPathTemplate": "/api/Follows/DropFollower",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prof_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/UserProfile/Users",
+      "DownstreamPathTemplate": "/api/UserProfile/Users",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prof_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/UserProfile/Users/GetUserById/{userId}",
+      "DownstreamPathTemplate": "/api/UserProfile/Users/GetUserById/{userId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prof_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamPathTemplate": "/api/UserProfile/UserCreate",
+      "DownstreamPathTemplate": "/api/UserProfile/UserCreate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prof_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "PATCH" ],
+      "UpstreamPathTemplate": "/api/UserProfile/UserUpdate",
+      "DownstreamPathTemplate": "/api/UserProfile/UserUpdate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prof_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Response/GetResponseById/{id}",
+      "DownstreamPathTemplate": "/api/Response/GetResponseById/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rev_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamPathTemplate": "/api/Response/CreateResponse",
+      "DownstreamPathTemplate": "/api/Response/CreateResponse",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rev_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "PUT" ],
+      "UpstreamPathTemplate": "/api/Response/UpdateResponse",
+      "DownstreamPathTemplate": "/api/Response/UpdateResponse",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rev_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamPathTemplate": "/api/Response/DeleteResponse/{responseId}",
+      "DownstreamPathTemplate": "/api/Response/DeleteResponse/{responseId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rev_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Reviews/GetReviewsByWorkshop/{workshopId}",
+      "DownstreamPathTemplate": "/api/Reviews/GetReviewsByWorkshop/{workshopId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rev_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Reviews/GetReviewById/{id}",
+      "DownstreamPathTemplate": "/api/Reviews/GetReviewById/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rev_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Reviews/CountReviews/{workshopId}",
+      "DownstreamPathTemplate": "/api/Reviews/CountReviews/{workshopId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rev_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Reviews/GetMediaReview/{workshopId}",
+      "DownstreamPathTemplate": "/api/Reviews/GetMediaReview/{workshopId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rev_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "POST" ],
+      "UpstreamPathTemplate": "/api/Reviews",
+      "DownstreamPathTemplate": "/api/Reviews",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rev_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "PUT" ],
+      "UpstreamPathTemplate": "/api/Reviews/ReviewUpdate",
+      "DownstreamPathTemplate": "/api/Reviews/ReviewUpdate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rev_api",
+          "Port": 80
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamPathTemplate": "/api/Reviews/{id}",
+      "DownstreamPathTemplate": "/api/Reviews/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rev_api",
+          "Port": 80
+        }
+      ]
     }
   ],
   "GlobalConfiguration": {
