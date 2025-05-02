@@ -4,8 +4,9 @@ services:
     build:
       context: .
       dockerfile: WebApiGateway/Dockerfile
+    container_name: webapigateway
     ports:
-      - 8001:80
+      - 8001:8080
     networks:
       - backend
   postgres_messages:
@@ -24,6 +25,7 @@ services:
       - messages
   web-api-messages:
     image: rasito/webapimessages:latest
+    container_name: webapimessages
     ports:
       - 8003:8080
     environment:
