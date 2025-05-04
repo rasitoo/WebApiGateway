@@ -179,10 +179,7 @@ services:
       - workshop
 
   webapitaller:
-    image: ${DOCKER_REGISTRY-}webapitaller
-    build:
-      context: ..
-      dockerfile: WebApiTaller/Dockerfile
+    image: rasito/webapiworkshop:latest
     depends_on:
       - mongodb
     environment:
