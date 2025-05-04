@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfApi", "..\..\..\..\..\.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevApi", "..\..\..\..\..\..\..\source\repos\RevApi\RevApi\RevApi.csproj", "{F499A0DE-8E16-EAD8-BC48-6891A750C46B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTaller", "..\WebApiTaller\WebApiTaller\WebApiTaller.csproj", "{2AFBC961-3E2C-3E71-31CA-79ED43052795}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{F499A0DE-8E16-EAD8-BC48-6891A750C46B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F499A0DE-8E16-EAD8-BC48-6891A750C46B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F499A0DE-8E16-EAD8-BC48-6891A750C46B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AFBC961-3E2C-3E71-31CA-79ED43052795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AFBC961-3E2C-3E71-31CA-79ED43052795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AFBC961-3E2C-3E71-31CA-79ED43052795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AFBC961-3E2C-3E71-31CA-79ED43052795}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

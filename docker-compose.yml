@@ -164,6 +164,39 @@ services:
       - backend
     ports:
       - 8005:8080
+  mongodb:
+    image: mongo:7
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: mydatabase
+    volumes:
+      - mongo_workshop_data:/data/db
+    networks:
+      - workshop
+
+  webapitaller:
+    image: ${DOCKER_REGISTRY-}webapitaller
+    build:
+      context: ..
+      dockerfile: WebApiTaller/Dockerfile
+    depends_on:
+      - mongodb
+    environment:
+      DbSettings__Host: mongo
+      DbSettings__Port: 27017
+      DbSettings__Username: root
+      DbSettings__Password: example
+      DbSettings__Database: mydatabase
+      JwtSettings__SecretKey: qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+    ports:
+      - "8007:8080"
+    networks:
+      - workshop
+      - backend
 networks:
   backend:
     driver: bridge
@@ -177,6 +210,8 @@ networks:
     driver: bridge
   rev:
     driver: bridge
+  workshop:
+    driver: bridge
 volumes:
   postgres_messages:
     driver: local
@@ -187,4 +222,6 @@ volumes:
   postgres_prof_data:
     driver: local
   postgres_rev_data:
+    driver: local
+  mongo_workshop_data:
     driver: local
