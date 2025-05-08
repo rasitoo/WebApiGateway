@@ -1,6 +1,6 @@
 services:
   webapigateway:
-    image: ${DOCKER_REGISTRY-}webapigateway
+    image: ${DOCKER_REGISTRY-}rasito/webapigateway
     build:
       context: .
       dockerfile: WebApiGateway/Dockerfile
@@ -98,7 +98,9 @@ services:
       DbSettings__Database: Comapi
       JwtSettings__SecretKey: qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
     depends_on:
-      - com_database
+      - com_database 
+    volumes:
+      - C:/Users/Rodrigo/OneDrive/Images/Communitypictures:/app/community_images
     networks:
       - communities
       - backend
@@ -128,7 +130,9 @@ services:
       DbSettings__Database: Prof
       JwtSettings__SecretKey: qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
     depends_on:
-      - prof_database
+      - prof_database 
+    volumes:
+      - C:/Users/Rodrigo/OneDrive/Images/profilepictures:/app/profile_images
     networks:
       - prof
       - backend
