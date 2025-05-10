@@ -6,7 +6,7 @@ services:
       dockerfile: WebApiGateway/Dockerfile
     container_name: webapigateway
     ports:
-      - 8001:8080
+      - 8000:8080
     networks:
       - backend
   postgres_messages:
@@ -27,7 +27,7 @@ services:
     image: rasito/webapimessages:latest
     container_name: webapimessages
     ports:
-      - 8003:8080
+      - 8001:8080
     environment:
       DbSettings__Host: postgres_messages
       DbSettings__Port: 5432
@@ -73,7 +73,7 @@ services:
       - authentication
       - backend
     ports:
-      - 8000:8080
+      - 8002:8080
   com_database:
     image: postgres:latest
     container_name: database_community
@@ -105,7 +105,7 @@ services:
       - communities
       - backend
     ports:
-      - 8002:8080
+      - 8003:8080
   prof_database:
     image: postgres:latest
     container_name: database_prof
@@ -181,9 +181,9 @@ services:
       - mongo_workshop_data:/data/db
     networks:
       - workshop
-
   webapitaller:
     image: rasito/webapiworkshop:latest
+    container_name: workshop_api
     depends_on:
       - mongodb
     environment:
@@ -194,7 +194,7 @@ services:
       DbSettings__Database: mydatabase
       JwtSettings__SecretKey: qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
     ports:
-      - "8007:8080"
+      - "8006:8080"
     networks:
       - workshop
       - backend
