@@ -2,15 +2,16 @@
   "Routes": [
     {
       "UpstreamHttpMethod": [ "Get", "Post" ],
-      "UpstreamPathTemplate": "/api/messages",
-      "DownstreamPathTemplate": "/api/messages",
+      "UpstreamPathTemplate": "/api/message",
+      "DownstreamPathTemplate": "/api/message",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "webapimessages",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "messages"
     },
     {
       "UpstreamHttpMethod": [ "Get" ],
@@ -22,7 +23,8 @@
           "Host": "authentication_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "authentication"
     },
     {
       "UpstreamHttpMethod": [ "Get" ],
@@ -34,7 +36,8 @@
           "Host": "authentication_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "authentication"
     },
     {
       "UpstreamHttpMethod": [ "Get" ],
@@ -46,7 +49,8 @@
           "Host": "authentication_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "authentication"
     },
     {
       "UpstreamHttpMethod": [ "Post" ],
@@ -58,7 +62,8 @@
           "Host": "authentication_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "authentication"
     },
     {
       "UpstreamHttpMethod": [ "Post" ],
@@ -70,7 +75,8 @@
           "Host": "authentication_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "authentication"
     },
     {
       "UpstreamHttpMethod": [ "Patch" ],
@@ -82,7 +88,8 @@
           "Host": "authentication_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "authentication"
     },
     {
       "UpstreamHttpMethod": [ "Post" ],
@@ -94,7 +101,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "Post" ],
@@ -106,7 +114,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
@@ -118,7 +127,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "Get" ],
@@ -130,7 +140,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "Get" ],
@@ -142,7 +153,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "Get" ],
@@ -154,7 +166,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "Delete" ],
@@ -166,7 +179,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "Post" ],
@@ -178,7 +192,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "Post" ],
@@ -190,7 +205,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "Get" ],
@@ -202,7 +218,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "Get" ],
@@ -214,7 +231,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
 
     {
@@ -227,7 +245,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -251,7 +270,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "PUT" ],
@@ -263,7 +283,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "DELETE" ],
@@ -275,7 +296,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -287,7 +309,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "POST" ],
@@ -299,7 +322,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "DELETE" ],
@@ -311,7 +335,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "POST" ],
@@ -323,7 +348,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "POST" ],
@@ -335,7 +361,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -347,7 +374,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -359,7 +387,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "DELETE" ],
@@ -371,7 +400,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -383,7 +413,8 @@
           "Host": "prof_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "profile"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -395,7 +426,8 @@
           "Host": "prof_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "profile"
     },
     {
       "UpstreamHttpMethod": [ "POST" ],
@@ -407,7 +439,8 @@
           "Host": "prof_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "profile"
     },
     {
       "UpstreamHttpMethod": [ "DELETE" ],
@@ -419,7 +452,8 @@
           "Host": "prof_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "profile"
     },
     {
       "UpstreamHttpMethod": [ "DELETE" ],
@@ -431,7 +465,8 @@
           "Host": "prof_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "profile"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -443,7 +478,8 @@
           "Host": "prof_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "profile"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -455,7 +491,8 @@
           "Host": "prof_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "profile"
     },
     {
       "UpstreamHttpMethod": [ "POST" ],
@@ -467,7 +504,8 @@
           "Host": "prof_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "profile"
     },
     {
       "UpstreamHttpMethod": [ "PATCH" ],
@@ -479,7 +517,8 @@
           "Host": "prof_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "profile"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -491,7 +530,8 @@
           "Host": "rev_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "review"
     },
     {
       "UpstreamHttpMethod": [ "POST" ],
@@ -503,7 +543,8 @@
           "Host": "rev_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "review"
     },
     {
       "UpstreamHttpMethod": [ "PUT" ],
@@ -515,7 +556,8 @@
           "Host": "rev_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "review"
     },
     {
       "UpstreamHttpMethod": [ "DELETE" ],
@@ -527,7 +569,8 @@
           "Host": "rev_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "review"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -539,7 +582,8 @@
           "Host": "rev_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "review"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -551,7 +595,8 @@
           "Host": "rev_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "review"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -563,7 +608,8 @@
           "Host": "rev_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "review"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -575,7 +621,8 @@
           "Host": "rev_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "review"
     },
     {
       "UpstreamHttpMethod": [ "POST" ],
@@ -587,7 +634,8 @@
           "Host": "rev_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "review"
     },
     {
       "UpstreamHttpMethod": [ "PUT" ],
@@ -599,7 +647,8 @@
           "Host": "rev_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "review"
     },
     {
       "UpstreamHttpMethod": [ "DELETE" ],
@@ -611,10 +660,69 @@
           "Host": "rev_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "review"
     }
   ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "messages",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "messages",
+          "Version": "v1",
+          "Url": "http://webapimessages:8080/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "authentication",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "authentication",
+          "Version": "v1",
+          "Url": "http://authentication_api:8080/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "community",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "community",
+          "Version": "v1",
+          "Url": "http://community_api:8080/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "profile",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "profile",
+          "Version": "v1",
+          "Url": "http://prof_api:8080/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "review",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "review",
+          "Version": "v1",
+          "Url": "http://rev_api:8080/swagger/v1/swagger.json"
+        }
+      ]
+    }
+
+  ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:8001"
+    "BaseUrl": "http://localhost:8000"
   }
 }

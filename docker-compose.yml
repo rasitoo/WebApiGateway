@@ -21,7 +21,6 @@ services:
     volumes:
       - postgres_messages:/var/lib/postgresql/data
     networks:
-      - backend
       - messages
   web-api-messages:
     image: rasito/webapimessages:latest
@@ -39,6 +38,7 @@ services:
       - postgres_messages
     networks:
       - messages
+      - backend
   auth_database:
     image: postgres:latest
     container_name: database_authentication

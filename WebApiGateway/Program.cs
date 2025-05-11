@@ -3,20 +3,21 @@ using Ocelot.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Ocelot Basic setup
 builder.Configuration
     .SetBasePath(builder.Environment.ContentRootPath)
-    .AddOcelot(); // single ocelot.json file in read-only mode
-builder.Services
-    .AddOcelot(builder.Configuration);
+    .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true)
+    .AddEnvironmentVariables();
 
-// Add your features
-if (builder.Environment.IsDevelopment())
-{
-    builder.Logging.AddConsole();
-}
+builder.Services.AddSwaggerForOcelot(builder.Configuration);
+builder.Services.AddOcelot();
 
-// Add middlewares aka app.Use*()
+builder.Services.AddMvcCore().AddApiExplorer();
 var app = builder.Build();
+
+app.UseSwaggerForOcelotUI(options =>
+{
+    options.PathToSwaggerGenerator = "/swagger/docs";
+});
+
 await app.UseOcelot();
 await app.RunAsync();
