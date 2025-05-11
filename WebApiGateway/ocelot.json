@@ -575,6 +575,30 @@
     },
     {
       "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/community_images/Profile/{everything}",
+      "DownstreamPathTemplate": "/community_images/Profile/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/community_images/Banner/{everything}",
+      "DownstreamPathTemplate": "/community_images/Banner/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ]
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
       "UpstreamPathTemplate": "/api/Thread/{idThread}",
       "DownstreamPathTemplate": "/api/Thread/{idThread}",
       "DownstreamScheme": "http",
@@ -715,6 +739,18 @@
         }
       ],
       "SwaggerKey": "profile"
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/profile_images/{everything}",
+      "DownstreamPathTemplate": "/profile_images/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prof_api",
+          "Port": 8080
+        }
+      ]
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
