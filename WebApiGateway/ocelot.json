@@ -14,6 +14,58 @@
       "SwaggerKey": "messages"
     },
     {
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "UpstreamPathTemplate": "/api/Chat",
+      "DownstreamPathTemplate": "/api/Chat",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "webapimessages",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "messages"
+    },
+    {
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
+      "UpstreamPathTemplate": "/api/Chat/{id}",
+      "DownstreamPathTemplate": "/api/Chat/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "webapimessages",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "messages"
+    },
+    {
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
+      "UpstreamPathTemplate": "/api/Message/{id}",
+      "DownstreamPathTemplate": "/api/Message/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "webapimessages",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "messages"
+    },
+    {
+      "UpstreamHttpMethod": [ "Get", "Post", "Delete" ],
+      "UpstreamPathTemplate": "/api/UserChat",
+      "DownstreamPathTemplate": "/api/UserChat",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "webapimessages",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "messages"
+    },
+    {
       "UpstreamHttpMethod": [ "Get" ],
       "UpstreamPathTemplate": "/User/GetUsers",
       "DownstreamPathTemplate": "/User/GetUsers",
@@ -258,7 +310,8 @@
           "Host": "community_api",
           "Port": 8080
         }
-      ]
+      ],
+      "SwaggerKey": "community"
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
@@ -404,6 +457,136 @@
       "SwaggerKey": "community"
     },
     {
+      "UpstreamHttpMethod": [ "Put" ],
+      "UpstreamPathTemplate": "/api/Community",
+      "DownstreamPathTemplate": "/api/Community",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
+      "UpstreamHttpMethod": [ "Put" ],
+      "UpstreamPathTemplate": "/api/Responses/community/{idCom}/Response{idResponse}",
+      "DownstreamPathTemplate": "/api/Responses/community/{idCom}/Response{idResponse}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/Roles/Comunidad/{idCommunity}/Rol/{idRol}",
+      "DownstreamPathTemplate": "/api/Roles/Comunidad/{idCommunity}/Rol/{idRol}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamPathTemplate": "/api/Roles/createRole",
+      "DownstreamPathTemplate": "/api/Roles/createRole",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamPathTemplate": "/api/Roles/community/{communId}/Rol{rolId}",
+      "DownstreamPathTemplate": "/api/Roles/community/{communId}/Rol{rolId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
+      "UpstreamHttpMethod": [ "Put" ],
+      "UpstreamPathTemplate": "/api/Roles/community/{comunityId}",
+      "DownstreamPathTemplate": "/api/Roles/community/{comunityId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
+      "UpstreamHttpMethod": [ "Put" ],
+      "UpstreamPathTemplate": "/api/Thread",
+      "DownstreamPathTemplate": "/api/Thread",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/Thread/bycreator/{creatorId}",
+      "DownstreamPathTemplate": "/api/Thread/bycreator/{creatorId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/Thread/byLike/{creatorId}",
+      "DownstreamPathTemplate": "/api/Thread/byLike/{creatorId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/Thread/{idThread}",
+      "DownstreamPathTemplate": "/api/Thread/{idThread}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
       "UpstreamHttpMethod": [ "GET" ],
       "UpstreamPathTemplate": "/api/Follows/followers/{userId}",
       "DownstreamPathTemplate": "/api/Follows/followers/{userId}",
@@ -511,6 +694,19 @@
       "UpstreamHttpMethod": [ "PATCH" ],
       "UpstreamPathTemplate": "/api/UserProfile/UserUpdate",
       "DownstreamPathTemplate": "/api/UserProfile/UserUpdate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prof_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "profile"
+    },
+    {
+      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/UserProfile/workshop",
+      "DownstreamPathTemplate": "/api/UserProfile/workshop",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -662,7 +858,176 @@
         }
       ],
       "SwaggerKey": "review"
-    }
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "Post" ],
+      "UpstreamPathTemplate": "/api/components",
+      "DownstreamPathTemplate": "/api/components",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "Put" ],
+      "UpstreamPathTemplate": "/api/components/{id}",
+      "DownstreamPathTemplate": "/api/components/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "Post" ],
+      "UpstreamPathTemplate": "/api/invoices",
+      "DownstreamPathTemplate": "/api/invoices",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "Delete" ],
+      "UpstreamPathTemplate": "/api/invoices/{id}",
+      "DownstreamPathTemplate": "/api/invoices/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "Post" ],
+      "UpstreamPathTemplate": "/api/orders",
+      "DownstreamPathTemplate": "/api/orders",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "Delete" ],
+      "UpstreamPathTemplate": "/api/orders/{id}",
+      "DownstreamPathTemplate": "/api/orders/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "Post" ],
+      "UpstreamPathTemplate": "/api/users",
+      "DownstreamPathTemplate": "/api/users",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "Put", "Delete" ],
+      "UpstreamPathTemplate": "/api/users/{id}",
+      "DownstreamPathTemplate": "/api/users/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "Post" ],
+      "UpstreamPathTemplate": "/api/vehicles",
+      "DownstreamPathTemplate": "/api/vehicles",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "Put", "Delete" ],
+      "UpstreamPathTemplate": "/api/vehicles/{id}",
+      "DownstreamPathTemplate": "/api/vehicles/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "Delete", "Post" ],
+      "UpstreamPathTemplate": "/api/vehicles/{vehicleId}/components",
+      "DownstreamPathTemplate": "/api/vehicles/{vehicleId}/components",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "Post" ],
+      "UpstreamPathTemplate": "/api/workshops",
+      "DownstreamPathTemplate": "/api/workshops",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET", "Delete" ],
+      "UpstreamPathTemplate": "/api/workshops/{id}",
+      "DownstreamPathTemplate": "/api/workshops/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
   ],
   "SwaggerEndPoints": [
     {
@@ -717,6 +1082,17 @@
           "Name": "review",
           "Version": "v1",
           "Url": "http://rev_api:8080/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "workshop",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "workshop",
+          "Version": "v1",
+          "Url": "http://workshop_api:8080/swagger/v1/swagger.json"
         }
       ]
     }
