@@ -2,8 +2,8 @@
   "Routes": [
     {
       "UpstreamHttpMethod": [ "Get", "Post" ],
-      "UpstreamPathTemplate": "/api/message",
-      "DownstreamPathTemplate": "/api/message",
+      "UpstreamPathTemplate": "/api/messages",
+      "DownstreamPathTemplate": "/api/messages",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -15,8 +15,8 @@
     },
     {
       "UpstreamHttpMethod": [ "Get", "Post" ],
-      "UpstreamPathTemplate": "/api/Chat",
-      "DownstreamPathTemplate": "/api/Chat",
+      "UpstreamPathTemplate": "/api/Chats",
+      "DownstreamPathTemplate": "/api/Chats",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -28,8 +28,8 @@
     },
     {
       "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
-      "UpstreamPathTemplate": "/api/Chat/{id}",
-      "DownstreamPathTemplate": "/api/Chat/{id}",
+      "UpstreamPathTemplate": "/api/Chats/{id}",
+      "DownstreamPathTemplate": "/api/Chats/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -41,8 +41,8 @@
     },
     {
       "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
-      "UpstreamPathTemplate": "/api/Message/{id}",
-      "DownstreamPathTemplate": "/api/Message/{id}",
+      "UpstreamPathTemplate": "/api/Messages/{id}",
+      "DownstreamPathTemplate": "/api/Messages/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -64,6 +64,19 @@
         }
       ],
       "SwaggerKey": "messages"
+    },
+    {
+      "DownstreamPathTemplate": "/hubs/messages",
+      "UpstreamPathTemplate": "/hubs/messages",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "webapimessages",
+          "Port": 8080
+        }
+      ],
+      "UseWebSockets": true
     },
     {
       "UpstreamHttpMethod": [ "Get" ],
@@ -1063,7 +1076,7 @@
         }
       ],
       "SwaggerKey": "workshop"
-    },
+    }
   ],
   "SwaggerEndPoints": [
     {
