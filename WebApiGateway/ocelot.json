@@ -588,20 +588,8 @@
     },
     {
       "UpstreamHttpMethod": [ "Get" ],
-      "UpstreamPathTemplate": "/community_images/Profile/{everything}",
-      "DownstreamPathTemplate": "/community_images/Profile/{everything}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "community_api",
-          "Port": 8080
-        }
-      ]
-    },
-    {
-      "UpstreamHttpMethod": [ "Get" ],
-      "UpstreamPathTemplate": "/community_images/Banner/{everything}",
-      "DownstreamPathTemplate": "/community_images/Banner/{everything}",
+      "UpstreamPathTemplate": "/community_images/{everything}",
+      "DownstreamPathTemplate": "/community_images/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -614,6 +602,45 @@
       "UpstreamHttpMethod": [ "Get" ],
       "UpstreamPathTemplate": "/api/Thread/{idThread}",
       "DownstreamPathTemplate": "/api/Thread/{idThread}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Community/HasSubscription/{communityId}",
+      "DownstreamPathTemplate": "/api/Community/HasSubscription/{communityId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Responses/HasLike/{responseId}",
+      "DownstreamPathTemplate": "/api/Responses/HasLike/{responseId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Thread/HasLike/{threadId}",
+      "DownstreamPathTemplate": "/api/Thread/HasLike/{threadId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
