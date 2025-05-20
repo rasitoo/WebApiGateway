@@ -717,6 +717,19 @@
     },
     {
       "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Follows/IsFollowing/{userId}/{otherUserId}",
+      "DownstreamPathTemplate": "/api/Follows/IsFollowing/{userId}/{otherUserId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prof_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "profile"
+    },
+    {
+      "UpstreamHttpMethod": [ "GET" ],
       "UpstreamPathTemplate": "/api/UserProfile/Users",
       "DownstreamPathTemplate": "/api/UserProfile/Users",
       "DownstreamScheme": "http",
