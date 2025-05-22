@@ -66,8 +66,8 @@
       "SwaggerKey": "messages"
     },
     {
-      "DownstreamPathTemplate": "/hubs/messages",
-      "UpstreamPathTemplate": "/hubs/messages",
+      "DownstreamPathTemplate": "/hubs/{everything}",
+      "UpstreamPathTemplate": "/hubs/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
