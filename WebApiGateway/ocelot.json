@@ -949,6 +949,19 @@
       "SwaggerKey": "review"
     },
     {
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/Reviews/GetReview/{userId}/{workshopId}",
+      "DownstreamPathTemplate": "/api/Reviews/GetReview/{userId}/{workshopId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rev_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "review"
+    },
+    {
       "UpstreamHttpMethod": [ "GET", "Post" ],
       "UpstreamPathTemplate": "/api/components",
       "DownstreamPathTemplate": "/api/components",
