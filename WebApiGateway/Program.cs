@@ -27,6 +27,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddMvcCore().AddApiExplorer();
 var app = builder.Build();
 app.UseCors("AllowLocalhost");
+app.UseWebSockets();
 app.UseSwaggerForOcelotUI(options =>
 {
     options.PathToSwaggerGenerator = "/swagger/docs";
