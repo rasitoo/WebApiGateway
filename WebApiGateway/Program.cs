@@ -14,15 +14,13 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowLocalhost", policy =>
     {
-        policy.WithOrigins("http://localhost:5173")
+        policy.WithOrigins("http://vms.iesluisvives.org:25002")
               .AllowAnyMethod()
               .AllowAnyHeader()
               .AllowCredentials();
     });
 });
 
-
-// Usar CORS
 
 builder.Services.AddMvcCore().AddApiExplorer();
 var app = builder.Build();

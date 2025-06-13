@@ -470,6 +470,19 @@
       "SwaggerKey": "community"
     },
     {
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "UpstreamPathTemplate": "/api/Thread/community/{idCom}/Thread/{idThread}",
+      "DownstreamPathTemplate": "/api/Thread/community/{idCom}/Thread/{idThread}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "community_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "community"
+    },
+    {
       "UpstreamHttpMethod": [ "Put" ],
       "UpstreamPathTemplate": "/api/Community",
       "DownstreamPathTemplate": "/api/Community",
@@ -484,8 +497,8 @@
     },
     {
       "UpstreamHttpMethod": [ "Put" ],
-      "UpstreamPathTemplate": "/api/Responses/community/{idCom}/Response{idResponse}",
-      "DownstreamPathTemplate": "/api/Responses/community/{idCom}/Response{idResponse}",
+      "UpstreamPathTemplate": "/api/Responses/community/{idCom}/Response/{idResponse}",
+      "DownstreamPathTemplate": "/api/Responses/community/{idCom}/Response/{idResponse}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -1053,7 +1066,20 @@
       "SwaggerKey": "workshop"
     },
     {
-      "UpstreamHttpMethod": [ "GET", "Put", "Delete" ],
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/users/{JWTid}",
+      "DownstreamPathTemplate": "/api/users/{JWTid}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "PUT", "DELETE" ],
       "UpstreamPathTemplate": "/api/users/{id}",
       "DownstreamPathTemplate": "/api/users/{id}",
       "DownstreamScheme": "http",
@@ -1118,7 +1144,20 @@
       "SwaggerKey": "workshop"
     },
     {
-      "UpstreamHttpMethod": [ "GET", "Delete" ],
+      "UpstreamHttpMethod": [ "GET" ],
+      "UpstreamPathTemplate": "/api/workshops/{JWTid}",
+      "DownstreamPathTemplate": "/api/workshops/{JWTid}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "workshop_api",
+          "Port": 8080
+        }
+      ],
+      "SwaggerKey": "workshop"
+    },
+    {
+      "UpstreamHttpMethod": [ "DELETE" ],
       "UpstreamPathTemplate": "/api/workshops/{id}",
       "DownstreamPathTemplate": "/api/workshops/{id}",
       "DownstreamScheme": "http",
@@ -1201,6 +1240,6 @@
 
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:8000"
+    "BaseUrl": "http://vms.iesluisvives.org:25003"
   }
 }
